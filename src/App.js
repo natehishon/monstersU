@@ -30,6 +30,7 @@ class App extends Component {
   }
 
   getUser() {
+    console.log("this");
     axios.get('/user/').then(response => {
       console.log('Get user response: ')
       console.log(response.data)
